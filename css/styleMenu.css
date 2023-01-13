@@ -1,0 +1,40 @@
+
+body    {
+    padding: 20px;
+}
+
+form{
+    display: inline;
+    width: 50px;
+}
+
+.bodyMenu {
+    background-image: url("../Img/mascotas.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+   
+.navMenu {
+    display: flex;
+    justify-content: end;
+}
+
+.navRedes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+svg {
+    width: 50px;
+}
+
+/*--------- Estilo modo oscuro------*/
+
+.oscuro{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+    background-image: url("../Img/mascotasfondonegro.png");
+}

@@ -1,0 +1,88 @@
+
+body    {
+    padding: 20px;
+}
+
+form{
+    display:contents;
+    width: 50px;
+}
+
+
+/* Se plantea misma alineacion para diferentes clases por separado ya que no lo toma todo junto */
+
+.nav {
+    display: flex;
+    justify-content: end;
+}
+
+
+.botonVolveralMenu {
+    display: flex;
+    justify-content: end;
+}
+
+
+.tituloRegistrar {
+    padding: 20px;
+}
+
+.divBotonesregistrar{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
+}
+
+.formRegistrar{
+    padding: 20px;
+}
+
+.footerRegistrar {
+    background-image: url("../Img/mascotas1.jpg");
+    background-size:150px;
+}
+
+.headerRegistrar {
+    background-image: url("../Img/mascotas1.jpg");
+    background-size:150px;
+}
+
+.thumb_image{
+    width: 75px;
+}
+
+
+/*--------- Estilo modo oscuro------*/
+
+.oscuro { 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+
+
+.oscuro .formRegistraroscuro { 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+
+.oscuro input { 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+
+.oscuro select { 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+
+.oscuro header {
+    background-image: url("../Img/mascotasfondonegro1.png");
+    background-size:150px;
+}
+
+.oscuro footer {
+    background-image: url("../Img/mascotasfondonegro1.png");
+    background-size:150px;
+}

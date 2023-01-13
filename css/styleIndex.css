@@ -1,0 +1,42 @@
+
+body    {
+    padding: 20px;
+}
+
+
+.divBotonesindex{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
+}
+
+.headerIndex {
+    background-image: url("../Img/mascotas1.jpg");
+    background-size:150px;
+}
+
+.thumb_image{
+    width: 75px;
+}
+
+
+    /*--------- Estilo modo oscuro------*/
+
+.oscuro { 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+   
+}
+
+.oscuro table{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+   
+}
+
+.oscuro header {
+    background-image: url("../Img/mascotasfondonegro1.png");
+    background-size:150px;
+}
