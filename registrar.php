@@ -51,7 +51,8 @@ if (count($_POST)>0){ // O también if ($_SERVER['REQUEST_METHOD']=='POST')
   $vacunado = $_POST['vacunado'];
   $esterilizado = $_POST['esterilizado'];
 
-
+// print_r($_POST);
+// exit;
 
   $foto=$_FILES['foto'] ?? null;
   if($foto){
@@ -122,7 +123,7 @@ if (count($_POST)>0){ // O también if ($_SERVER['REQUEST_METHOD']=='POST')
 <h1 class="tituloRegistrar">Registrá tu Mascota</h1>
 
 
-<form method="post" action="registrar.php" enctype="multipart/form-data" class="formRegistrar">
+<form method="post" action="registrar.php" enctype="multipart/form-data" class="formRegistrar" name="formRegistrar">
 
   <div class="mb-3">
     <label for="nombre" class="form-label">Nombre</label>
@@ -199,7 +200,7 @@ if (count($_POST)>0){ // O también if ($_SERVER['REQUEST_METHOD']=='POST')
   </div>
 
 
-  <button type="submit" class="btn btn-primary">Registrar</button>
+  <button type="submit" class="btn btn-primary botonRegistrar">Registrar</button>
 </form>
 
 <div class="form-text">No compartiremos sus datos con nadie más.</div>
@@ -213,6 +214,8 @@ if (count($_POST)>0){ // O también if ($_SERVER['REQUEST_METHOD']=='POST')
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
     <script src="JS/script.js"></script>
-    <script src="JS/scriptModooscuroRegistrar.js"></script>
+    <script src="JS/scriptModo.js"></script>
+    <script src="JS/scriptEvento.js"></script>
+
 </body>
 </html>

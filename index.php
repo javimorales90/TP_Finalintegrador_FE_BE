@@ -15,8 +15,8 @@ try {
 
     echo $e->getMessage();
 }
-
-$statement = $dbh->prepare('SELECT * FROM mascotas ORDER BY nombre');
+$sql="SELECT * FROM mascotas LEFT JOIN provincias ON id_provincia=provincia ORDER BY nombre";
+$statement = $dbh->prepare($sql);
 $statement->execute();
 $mascotas = $statement->fetchAll(); // trae todos las mascotas en un array
 
@@ -91,7 +91,7 @@ echo "</pre>";
             <td><?= $mascota ['apellido_propietario'] ?></td>
             <td><?= $mascota ['telefono'] ?></td>
             <td><?= $mascota ['email'] ?></td>
-            <td><?= $mascota ['provincia'] ?></td>
+            <td><?= $mascota ['nombre_provincia'] ?></td>
             <td><?= $mascota ['especie'] ?></td>
             <td><?= $mascota ['vacunado'] ?></td>
             <td><?= $mascota ['esterilizado'] ?></td>
@@ -105,7 +105,7 @@ echo "</pre>";
 
               <form method="post" action="borrar.php">
                 <input type="hidden" name="id" value="<?= $mascota ['id'] ?>">
-                <button type="submit" class="btn btn-danger">Borrar</button>
+                <button type="submit" class="btn btn-danger botonBorrar">Borrar</button>
               </form>
             </td>
 
@@ -120,6 +120,7 @@ echo "</pre>";
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
     <script src="JS/script.js"></script>
-    <script src = "JS/scriptModooscuroIndex.js"></script>
+    <script src = "JS/scriptModo.js"></script>
+    <script src="JS/scriptEvento.js"></script>
 </body>
 </html>

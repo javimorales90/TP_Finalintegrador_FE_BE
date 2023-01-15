@@ -151,7 +151,7 @@ $mascota = $stmt->fetch(PDO::FETCH_ASSOC); // trae una mascotas
 <h1 class="tituloRegistrar">Registrá tu Mascota</h1>
 
 
-<form method="post" action="actualizar.php" enctype="multipart/form-data" class="formRegistrar">
+<form method="post" action="actualizar.php" enctype="multipart/form-data" class="formRegistrar" name="formRegistrar">
     <input type="hidden" name="id" value="<?= $mascota ['id'] ?>">
 
     <img src= "<?= $mascota ['foto'] ?>" class= "thumb_image">
@@ -232,7 +232,7 @@ $mascota = $stmt->fetch(PDO::FETCH_ASSOC); // trae una mascotas
   </div>
 
 
-  <button type="submit" class="btn btn-primary">Registrar</button>
+  <button type="submit" class="btn btn-primary botonRegistrar">Registrar</button>
 </form>
 
 <div class="form-text">No compartiremos sus datos con nadie más.</div>
@@ -246,6 +246,7 @@ $mascota = $stmt->fetch(PDO::FETCH_ASSOC); // trae una mascotas
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
     <script src="JS/script.js"></script>
-    <script src="JS/scriptModooscuroRegistrar.js"></script>
+    <script src="JS/scriptModo.js"></script>
+    <script src="JS/scriptEvento.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+
+/* ----- VINCULACION A API-----*/
+
 fetch("https://apis.datos.gob.ar/georef/api/provincias")
  .then(function (res) {
     return res.json();
@@ -14,12 +17,4 @@ fetch("https://apis.datos.gob.ar/georef/api/provincias")
 })
 
 
-
-//------------------- TEMA OSCURO--------------
-
-
-function cambiarModo() { 
-    var cuerpoweb = document.body; 
-    cuerpoweb.classList.toggle("oscuro"); 
-}
 
