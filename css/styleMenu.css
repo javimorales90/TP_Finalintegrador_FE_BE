@@ -3,18 +3,21 @@ body    {
     padding: 20px;
 }
 
-form{
-    display: inline;
-    width: 50px;
-}
-
 .bodyMenu {
     background-image: url("../Img/mascotas.jpg");
     background-size:cover;
     background-attachment: fixed;
 }
 
-   
+h1{
+    padding: 10px;
+}
+
+.redesYcard{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navMenu {
     display: flex;
     justify-content: end;
@@ -22,19 +25,112 @@ form{
 
 .navRedes{
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     align-content: flex-end;
+}
+
+.datosContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
 }
 
 svg {
     width: 50px;
 }
 
-/*--------- Estilo modo oscuro------*/
+/*--------- Estilo modo oscuro ------*/
 
 .oscuro{ 
     background-color: #1f1f1f; 
     color: #f1eded; 
     background-image: url("../Img/mascotasfondonegro.png");
 }
+
+
+.oscuro .card{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+    border-color: #f1eded;
+
+}
+
+.oscuro .card-body{
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+    border-color: #f1eded;
+}
+
+
+/*--------- Medida Queries --------*/
+
+    
+    @media (max-width: 768px){
+        .bodyMenu {
+            background-image: url("../Img/queries.png");
+            background-size:cover;
+            background-attachment: fixed;
+        }
+
+        .navMenu {
+            padding: 20px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-between;
+        }
+    
+        .listaMenu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-between;
+        }
+    
+        .navRedes{
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-between;
+            /* padding: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            align-content:space-between;  */
+        }
+    
+        .card{
+            padding: 20 px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-between; 
+        }
+    
+        .datosContacto{
+            padding: 20 px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-around; 
+        }
+
+        .redesYcard{
+            padding: 20 px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content:space-between; 
+        }
+    }

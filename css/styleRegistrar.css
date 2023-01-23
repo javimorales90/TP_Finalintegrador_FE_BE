@@ -77,6 +77,10 @@ form{
     color: #f1eded; 
 }
 
+.oscuro div.form-text { 
+    color: #f1eded; 
+}
+
 .oscuro header {
     background-image: url("../Img/mascotasfondonegro1.png");
     background-size:150px;

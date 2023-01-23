@@ -1,20 +1,24 @@
 
-/* ----- VINCULACION A API-----*/
+
+
+
+
+/* ----- VINCULACION A API PARA REGISTRAR -----*/
+
 
 fetch("https://apis.datos.gob.ar/georef/api/provincias")
- .then(function (res) {
+    .then(function (res) {
     return res.json();
 })
-.then(function (datos){
+    .then(function (datos){
     let inputSelect = document.querySelector("#provincia");
 
     datos.provincias.forEach((provincia) => {
-        inputSelect.innerHTML += `<option value="${provincia.id}">${provincia.nombre}</option>`;
-    });
+            inputSelect.innerHTML += `<option value="${provincia.id}">${provincia.nombre}</option>`;
+    })
 })
 .catch(function (err) {
     console.log(err);
-})
-
+    });
 
 
