@@ -23,38 +23,3 @@ fetch("https://apis.datos.gob.ar/georef/api/provincias")
 })
 
 
-
-
-/* ----- TRAER SELECTS A ACTUALIZAR.PHP -----*/
-
-// function datosEspecies (){
-//     let inputSelectespecie = document.querySelector("#especie");
-
-//     datosEspecies.especies.forEach((especie) => {
-//         if (Especie == $mascota ['especie']){
-//             inputSelectespecie.innerHTML += `<option value="${$mascota ['especie']}" selected>${$mascota ['especie']}</option>`;
-//         } else {
-//             inputSelectespecie.innerHTML += `<option value="${$mascota ['especie']}">${$mascota ['especie']}</option>`;
-//         }
-//     })
-//     .catch(function (err) {
-//         console.log(err);
-//         });
-// };
-
-
-/* A PRUEBA
-
-// function ShowSelected()
-// {
-// /* Para obtener el valor */
-// var cod = document.getElementById("especie").value;
-
-// /* Para obtener el texto */
-// var combo = document.getElementById("especie");
-// var selected = combo.options[combo.selectedIndex].text;
-
-// document.getElementById("especie").value = selected;
-
-// document.getElementById("especie").innerHTML = selected;
-// }

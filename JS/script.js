@@ -20,5 +20,3 @@ fetch("https://apis.datos.gob.ar/georef/api/provincias")
 .catch(function (err) {
     console.log(err);
     });
-
-
